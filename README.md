@@ -9,5 +9,6 @@ An open-source utility for image and video manipulations
 ## How to install it in linux?
 ### First you have to install python3-tk in your system and then just execute the following command in terminal
 <pre><code>pip3 install customtkinter opencv-python vidgear moviepy pillow</code></pre>
+### Then run <code>util.pyw</code> manually
 <br></br>
 Even MacOS users can build it from source by own

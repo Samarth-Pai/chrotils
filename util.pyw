@@ -1,6 +1,6 @@
 # Utilities
 # image:resizer,compresser
-# video:resizer,compresser
+# video:resizer
 
 # Inititalization
 from customtkinter import filedialog,BOTH,X,Y,CTkButton,CTkLabel,LEFT,CTk,CTkFrame,CTkToplevel,TOP,CTkSlider,HORIZONTAL,IntVar,StringVar,CTkComboBox,CTkProgressBar
@@ -32,7 +32,7 @@ def useLoader():
         case "Image Resizer":return imageResizerLoader()
         case "Image Compressor":return imageCompressorLoader()
         case "Video Resizer":return videoResizerLoader()
-        case "Video Compressor":return videoCompressorLoader()
+        # case "Video Compressor":return videoCompressorLoader()
         case _:messagebox.showerror("chrotils","No such utility found, select a valid one")
     
 def imageComboLoader():
@@ -132,7 +132,7 @@ def videoComboLoader():
     global combo,comboVal,useButton
     combo.pack_forget()
     comboVal.set("Video Resizer")
-    combo.configure(values=["Video Resizer","Video Compressor"])
+    combo.configure(values=["Video Resizer"])
     useButton.pack(pady=10)
     combo.pack()
 
